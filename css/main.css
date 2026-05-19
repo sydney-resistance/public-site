@@ -73,10 +73,13 @@ line-height: 1.4em ; }
 a { color: #378fb4; text-decoration: none}
 a.join, a.verfify { border-radius: 4px; font-family: 'Oswald', sans-serif; font-size: 2em; color: #FFF; padding: 15px; text-decoration: none; display: inline-block; margin: 10px 10px 0 0;}
 a:hover { color: white !important; text-decoration: none }
+p a:hover { color: #87c8eb !important; text-decoration: underline }
 a.join { background: #378fb4; }
 a.join:hover { background: #0b5b7d; }
 a.verfify { background: #dc4a36; }
 a.verfify:hover { background: #ab3323; }
+a.verfify.tg-cta { background: #229ED9; }
+a.verfify.tg-cta:hover { background: #1c87b8; }
 
 h2 {font-family: 'Oswald', sans-serif !important;}
 h2 small { font-size: 0.55em }
