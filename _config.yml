@@ -1,0 +1,9 @@
+title: Sydney Resistance
+description: Join the Sydney Resistance — Ingress community for Sydney.
+url: https://sydres.org
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

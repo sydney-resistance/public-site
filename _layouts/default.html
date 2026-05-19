@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" itemscope itemtype="http://schema.org/WebApp">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#0088FF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta itemprop="name" content="We are the Sydney Resistance! An invisible war rages around you. Join the fight, protect what's yours. Defend against the Shapers!">
+  <meta itemprop="description" content="Join the Resistance - Defend the world - Protect humanity's freedom">
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://sydres.org",
+    "sameAs": [
+      "https://www.facebook.com/sydresistance",
+      "https://www.twitter.com/IngressSydRes"
+    ]
+  }
+  </script>
+  <link href="{{ '/css/reset.css' | relative_url }}" rel="stylesheet" type="text/css">
+  <link href="{{ '/css/main.css' | relative_url }}" rel="stylesheet" type="text/css">
+  <link href="{{ '/css/slideshow.css' | relative_url }}" rel="stylesheet" type="text/css">
+  <link href="{{ '/css/animate.css' | relative_url }}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="{{ '/js/sc.js' | relative_url }}"></script>
+  <script src="{{ '/js/mm.js' | relative_url }}"></script>
+  <script src="{{ '/js/jquery.fittext.js' | relative_url }}"></script>
+  <script src="{{ '/js/jquery.animate-enhanced.min.js' | relative_url }}"></script>
+  <script src="{{ '/js/wow.min.js' | relative_url }}"></script>
+  <script>new WOW().init();</script>
+</head>
+<body>
+
+<ul class="cb-slideshow">
+  <li><span class="xp"></span><div></div></li>
+  <li><span class="xp"></span><div></div></li>
+  <li><span class="xp"></span><div></div></li>
+  <li><span class="xp"></span><div></div></li>
+  <li><span class="xp"></span><div></div></li>
+  <li><span class="xp"></span><div></div></li>
+</ul>
+
+<nav id="topnav">
+  <ul>
+    <li class="r">X</li>
+    <li><a href="#home">Sydney <strong>Resistance</strong></a></li>
+    <li><a href="https://agent.sydres.org/">Login/Sign up!</a></li>
+  </ul>
+</nav>
+
+{{ content }}
+
+<script>
+  $(".cb-slideshow").height($(window).height());
+  $(".xp").height($(window).height());
+  jQuery("h3.access").fitText(0.8, { minFontSize: '22px', maxFontSize: '90px' });
+  jQuery("h2").fitText(1, { minFontSize: '42px', maxFontSize: '100px' });
+  jQuery(".gp").fitText(0.8, { minFontSize: '32px', maxFontSize: '90px' });
+  jQuery(".join").fitText(0.8, { minFontSize: '16px', maxFontSize: '24px' });
+</script>
+
+<a href="https://besmurf.de" target="_blank" rel="noopener" class="imp">Design gratefully adapted from Resistance Berlin</a>
+
+</body>
+</html>
